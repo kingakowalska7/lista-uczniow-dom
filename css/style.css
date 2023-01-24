@@ -1,0 +1,91 @@
+body{
+    box-sizing: border-box;
+    width: 95%;
+}
+
+#uczniowie{ 
+    background-color: azure;  
+    border: 4mm ridge blue;
+    width: 100%;
+} 
+
+h2 {
+    
+    text-align: center;
+}
+
+#tytul-uczen,
+.uczen{
+    margin-left: 5px;
+}
+
+.uczen,
+.matematyka,
+.polski,
+.biologia,
+.geografia,
+.fizyka,
+.chemia,
+.informatyka,
+.zajecia-dodatkowe,
+.srednia {
+	width: 130px;
+	background-color: #efefef;  
+	color: #666;
+	border: 2px solid #ddd;
+	border-radius: 5px;
+	font-size: 10px;
+    font-weight: bold;
+	padding: 10px;
+	box-sizing: border-box; 
+	outline: none; 
+	margin-top: 10px;
+   
+} 
+  
+span {
+    display: inline-block;
+}
+
+
+button{
+    text-decoration: none;
+    text-align: center;
+    color: #3cbabe;
+    border: 2px solid #3cbabe;
+    border-radius: 4px;
+    position: relative;
+    width: 150px;
+    line-height: 40px;
+    display: inline-block; 
+    font-family: Arial;
+    font-weight: 600;
+    overflow: hidden;
+    margin-top: 100px; 
+    margin-left: 600px;     
+}
+
+button:before {
+    content: "";
+    background-color: rgba(255,255,255,0.5);
+    height: 100%;
+    width: 40px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -70px;
+    transform: skewX(-45deg) translateX(0px);
+    transition: none;
+  }
+button:hover{
+    background-color: #3cbabe;
+    color: #ffffff;
+    border-bottom: 2px solid #319598;
+}
+
+button:hover:before{
+    transform: skewX(-45deg) translateX(250px);
+    transition: all 0.4s ease-in;
+}
+
+
