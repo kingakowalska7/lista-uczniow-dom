@@ -11,7 +11,7 @@ document.getElementById("oblicz").addEventListener("click", function(){
     for (let j = 0; j < zajeciaDodatkowe.length; j++){
 
     if (zajeciaDodatkowe[j].includes(oceny[i].className) && oceny[i].value != 6){
-      oceny[i].value = parseFloat(oceny[i].value) + 0.5
+      oceny[i].value = parseFloat(oceny[i].value) + 0.5;
     }
   }
     sumaOcen += parseFloat(oceny[i].value);
